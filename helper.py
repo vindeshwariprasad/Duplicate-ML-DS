@@ -296,8 +296,8 @@ def query_point_creator(q1, q2):
     input_query.append(round(test_common_words(q1, q2) / test_total_words(q1, q2), 2))
 
     # fetch token features
-    #token_features = test_fetch_token_features(q1, q2)
-    #input_query.extend(token_features)
+    token_features = test_fetch_token_features(q1, q2)
+    input_query.extend(token_features)
 
     # fetch length based features
     length_features = test_fetch_length_features(q1, q2)
